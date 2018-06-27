@@ -1,4 +1,4 @@
-package library.view
+package ch.makery.library.view
 
 import scalafxml.core.macros.sfxml
 import ch.makery.library.MainApp.roots

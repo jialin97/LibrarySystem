@@ -1,4 +1,4 @@
-package library.model
+package ch.makery.library.model
 
 import ch.makery.library.util.Database
 import scalafx.beans.property.StringProperty

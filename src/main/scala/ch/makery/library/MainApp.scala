@@ -1,4 +1,4 @@
-package library
+package ch.makery.library
 
 import ch.makery.address.model.{OnlineBook, PhysicalBook}
 import ch.makery.library.model.DiscussionRoom

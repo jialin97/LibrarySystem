@@ -1,4 +1,4 @@
-package library.view
+package ch.makery.library.view
 
 import ch.makery.library.MainApp
 import ch.makery.library.model.DiscussionRoom
