@@ -1,7 +1,6 @@
 package ch.makery.library
 
-import ch.makery.address.model.{OnlineBook, PhysicalBook}
-import ch.makery.library.model.DiscussionRoom
+import ch.makery.library.model.{DiscussionRoom, OnlineBook, PhysicalBook}
 import ch.makery.library.util.Database
 import ch.makery.library.view.{SearchBookPageController, SearchPhysicalBookController}
 import scalafx.application.JFXApp

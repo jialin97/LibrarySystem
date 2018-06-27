@@ -30,7 +30,7 @@ object DiscussionRoom extends Database{
           create table room(
                roomId varchar(5) not null,
                timeSlot varchar(15) not null,
-               availability Integer(2) not null
+               availability Integer not null
            )
 
         """.execute.apply()

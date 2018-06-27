@@ -1,7 +1,6 @@
 package ch.makery.library.util
 
-import ch.makery.address.model.{OnlineBook, PhysicalBook}
-import ch.makery.library.model.DiscussionRoom
+import ch.makery.library.model.{DiscussionRoom, OnlineBook, PhysicalBook}
 import scalikejdbc._    //third party to connect to database
 
 trait Database {     //trait dont have constructors
