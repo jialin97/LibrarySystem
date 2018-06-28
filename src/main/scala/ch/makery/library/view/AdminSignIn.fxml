@@ -11,14 +11,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.library.view.RegisterController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.library.view.AdminSignInController">
    <children>
-      <Text layoutX="110.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0">
+      <Text layoutX="100.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0">
          <font>
             <Font size="36.0" />
          </font>
       </Text>
-      <AnchorPane layoutX="110.0" layoutY="254.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="150.0">
+      <AnchorPane layoutX="206.0" layoutY="112.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="150.0">
          <children>
             <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <columnConstraints>
@@ -28,20 +28,17 @@
                <rowConstraints>
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
                   <Label text="Username" />
                   <Label text="Password" GridPane.rowIndex="1" />
                   <TextField fx:id="usernameField" promptText="Please enter your username" GridPane.columnIndex="1" />
-                  <Label text="Confirm Password" GridPane.rowIndex="2" />
                   <PasswordField fx:id="passwordField" promptText="Please enter your password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <PasswordField fx:id="checkPasswordField" promptText="Please re-enter your password" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
          </children>
       </AnchorPane>
-      <Button layoutX="210.0" layoutY="356.0" mnemonicParsing="false" onAction="#register" text="Register as a library member" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="80.0">
+      <Button layoutX="277.0" layoutY="175.0" mnemonicParsing="false" onAction="#signIn" text="Sign In" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="250.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

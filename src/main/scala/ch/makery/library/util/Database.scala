@@ -1,7 +1,9 @@
 package ch.makery.library.util
 
-import ch.makery.library.model.{DiscussionRoom, OnlineBook, PhysicalBook}
-import scalikejdbc._    //third party to connect to database
+import ch.makery.library.model._
+import scalikejdbc._
+
+import scala.None    //third party to connect to database
 
 trait Database {     //trait dont have constructors
   val derbyDriverClassname = "org.apache.derby.jdbc.EmbeddedDriver"     //driver to connect database
@@ -36,8 +38,22 @@ object Database extends Database{
       OnlineBook.createOnlineTable
     }
   }
+  def setupMemberDB(){
+    if(!foundMemberTable){
+      Member.initializeMemberTable
+    }
+  }
+  def setupAdminDB(){
+    if(!foundAdminTable){
+      Admin.initializeAdminTable
+    }
+  }
+  def setupLoanDB(): Unit ={
+    if(!foundLoanTable){
+      Loan.initializeLoanTable
+    }
+  }
   def foundRoomTable : Boolean = {
-
     DB getTable "room" match {    //Db.getTable("room")
       case Some(x) => true
       case None => false
@@ -53,6 +69,24 @@ object Database extends Database{
   def foundOnlineBookTable: Boolean = {
     DB getTable "onlineBook" match {
       case Some(z) => true
+      case None => false
+    }
+  }
+  def foundMemberTable: Boolean ={
+    DB getTable "Member" match {
+      case Some(x) => true
+      case None => false
+    }
+  }
+  def foundAdminTable: Boolean ={
+    DB getTable "Admin" match {
+      case Some(x) => true
+      case None => false
+    }
+  }
+  def foundLoanTable: Boolean ={
+    DB getTable "Loan" match {
+      case Some(x) => true
       case None => false
     }
   }

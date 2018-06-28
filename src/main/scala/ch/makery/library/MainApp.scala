@@ -43,7 +43,7 @@ object MainApp extends JFXApp{
   }
 
   def showHomePage() ={
-    val resource1 = getClass.getResourceAsStream("view/HomePage.fxml")
+    val resource1 = getClass.getResourceAsStream("view/Authentication.fxml")
     val loader = new FXMLLoader(null, NoDependencyResolver)
     loader.load(resource1);
     val homePage = loader.getRoot[jfxs.layout.AnchorPane]
