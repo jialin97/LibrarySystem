@@ -8,7 +8,7 @@ import scala.util.Try
 
 class Loan (val loanIds: Int, val userIds: Int, val bookIds: Int) extends Database{
 
-  def this() = this(null, null, null)
+  def this (){this((null).asInstanceOf[Int],(null).asInstanceOf[Int],(null).asInstanceOf[Int])}
   var loanId = IntegerProperty(loanIds)
   var userId = IntegerProperty(userIds)
   var bookId = IntegerProperty(bookIds)
@@ -49,5 +49,11 @@ object Loan extends Database {
         )
         """.execute.apply()
     }
+  }
+  def getAllLoans : List[Loan] = { // for select queries use "readOnly"
+    DB readOnly { implicit session =>
+      sql"select * from Loan".map(rs => Loan(rs.int("loanId"), // use map collection as select queries usually returns multiple values
+        rs.int("userId"),rs.int("bookId"))).list.apply()
+    } // return every row in database as a Loan
   }
 }

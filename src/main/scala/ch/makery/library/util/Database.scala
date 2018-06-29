@@ -46,6 +46,7 @@ object Database extends Database{
   def setupAdminDB(){
     if(!foundAdminTable){
       Admin.initializeAdminTable
+      Admin.initData
     }
   }
   def setupLoanDB(): Unit ={

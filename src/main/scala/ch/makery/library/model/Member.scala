@@ -10,7 +10,7 @@ class Member (usernameS: String, passwordS: String) extends User (usernameS, pas
   def this() = this(null, null)
 
   def save() : Try[Int] = { //instance method
-    if (!(isExist)) {
+    if (!(isExist())) {
       Try(DB autoCommit { implicit session =>
         sql"""
 					insert into Member (username, password) values
@@ -23,7 +23,7 @@ class Member (usernameS: String, passwordS: String) extends User (usernameS, pas
 
   }
 
-  def isExist : Boolean =  {
+  def isExist() : Boolean =  {
     DB readOnly { implicit session =>
       sql"""
 				select * from Member where
@@ -58,6 +58,12 @@ object Member extends Database{
 
         """.execute.apply()
     }
+  }
+  def getAllMembers : List[Member] = { // for select queries use "readOnly"
+    DB readOnly { implicit session =>
+      sql"select * from Member".map(rs => Member(rs.string("username"), // use map collection as select queries usually returns multiple values
+        rs.string("password"))).list.apply()
+    } // return every row in database as a Member
   }
 
 }

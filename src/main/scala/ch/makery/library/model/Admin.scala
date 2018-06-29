@@ -22,7 +22,7 @@ class Admin (usernameS: String, passwordS: String) extends User (usernameS, pass
 
   }
 
-  def isExist : Boolean =  {
+  def isExist() : Boolean =  {
     DB readOnly { implicit session =>
       sql"""
 				select * from Admin where
@@ -52,6 +52,20 @@ object Admin extends Database{
 
         """.execute.apply()
     }
+  }
+  def initData: Unit ={
+    DB autoCommit  { implicit  session =>
+      sql"""
+            insert into admin (username, password)
+            values ("admin", "admin")
+            """.update.apply()
+    }
+  }
+  def getAllAdmins : List[Admin] = { // for select queries use "readOnly"
+    DB readOnly { implicit session =>
+      sql"select * from Admin".map(rs => Admin(rs.string("username"), // use map collection as select queries usually returns multiple values
+        rs.string("password") )).list.apply()
+    } // return every row in database as an Admin
   }
 
 

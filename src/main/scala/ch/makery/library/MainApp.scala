@@ -1,6 +1,6 @@
 package ch.makery.library
 
-import ch.makery.library.model.{DiscussionRoom, OnlineBook, PhysicalBook}
+import ch.makery.library.model._
 import ch.makery.library.util.Database
 import ch.makery.library.view.{SearchBookPageController, SearchPhysicalBookController}
 import scalafx.application.JFXApp
@@ -18,6 +18,9 @@ object MainApp extends JFXApp{
   Database.setupDB()
   Database.setupPhysicalBookDB()
   Database.setupOnlineBookDB()
+  Database.setupLoanDB()
+  Database.setupMemberDB()
+  Database.setupAdminDB()
 
   var roomData = new ObservableBuffer[DiscussionRoom]()
     roomData ++= DiscussionRoom.getRoom
@@ -25,9 +28,17 @@ object MainApp extends JFXApp{
   var physicalBookData = new ObservableBuffer[PhysicalBook]()
     physicalBookData ++= PhysicalBook.getData
 
-
   var onlineBookData = new ObservableBuffer[OnlineBook]()
     onlineBookData ++= OnlineBook.getData1
+
+  var loanData = new ObservableBuffer[Loan]()
+    loanData ++= Loan.getAllLoans
+
+  var memberData = new ObservableBuffer[Member]()
+    memberData ++= Member.getAllMembers
+
+  var adminData = new ObservableBuffer[Admin]()
+    adminData ++= Admin.getAllAdmins
 
   val rootResource = getClass.getResourceAsStream("view/RootLayout.fxml")
   val loader = new FXMLLoader(null, NoDependencyResolver)
