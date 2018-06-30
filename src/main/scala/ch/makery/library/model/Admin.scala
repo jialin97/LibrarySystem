@@ -9,7 +9,7 @@ class Admin (usernameS: String, passwordS: String) extends User (usernameS, pass
   def this() = this(null, null)
 
   def save() : Try[Int] = { //instance method
-    if (!(isExist)) {
+    if (!(isExist())) {
       Try(DB autoCommit { implicit session =>
         sql"""
 					insert into Admin (username, password) values
@@ -53,13 +53,13 @@ object Admin extends Database{
         """.execute.apply()
     }
   }
-  def initData: Unit ={
-    DB autoCommit  { implicit  session =>
-      sql"""
-            insert into admin (username, password)
-            values ("admin", "admin")
-            """.update.apply()
-    }
+  
+  def initData{
+      DB autoCommit { implicit session =>
+        sql"insert into Admin (username, password) values('admin', 'admin')"
+				.update.apply()
+      }
+
   }
   def getAllAdmins : List[Admin] = { // for select queries use "readOnly"
     DB readOnly { implicit session =>
