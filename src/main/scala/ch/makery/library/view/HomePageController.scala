@@ -5,9 +5,13 @@ import ch.makery.library.MainApp.{getClass, roots}
 import scalafxml.core.{FXMLLoader, NoDependencyResolver}
 import scalafxml.core.macros.sfxml
 import javafx.{scene => jfxs}
+import scalafx.scene.control.{Alert, ButtonType}
+import scalafx.scene.control.Alert.AlertType
 
 @sfxml
 class HomePageController {
+
+  var logged : Boolean = false
 
   def searchBook: Unit ={
     val resource2 = getClass.getResourceAsStream("SearchBook.fxml")
@@ -30,7 +34,24 @@ class HomePageController {
   }
 
   def logOut() ={
-    MainApp.showAuthentication()
+
+    val alertBox = new Alert(AlertType.Confirmation) {
+      initOwner(MainApp.stage)
+      headerText = "Confirm logout?"
+    }
+
+    val confirm = alertBox.showAndWait()
+
+    confirm match {
+      case Some(ButtonType.OK)=>
+        logged = true
+      case _ =>
+        logged = false
+    }
+
+    if(logged)
+      MainApp.showAuthentication()
+
   }
 
 }

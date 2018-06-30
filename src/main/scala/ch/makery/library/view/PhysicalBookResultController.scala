@@ -9,7 +9,6 @@ import javafx.{scene => jfxs}
 @sfxml
 class PhysicalBookResultController {
 
-
   def homePage: Unit ={
     MainApp.showHomePage()
   }
