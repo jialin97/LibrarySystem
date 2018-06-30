@@ -1,6 +1,7 @@
 package ch.makery.library.view
 
-import ch.makery.library.MainApp.roots
+import ch.makery.library.MainApp
+import ch.makery.library.MainApp.{getClass, roots}
 import scalafxml.core.{FXMLLoader, NoDependencyResolver}
 import scalafxml.core.macros.sfxml
 import javafx.{scene => jfxs}
@@ -26,6 +27,10 @@ class HomePageController {
     loader2.load(resource4);
     val roomPage = loader2.getRoot[jfxs.layout.AnchorPane]
     roots.setCenter(roomPage)
+  }
+
+  def logOut() ={
+    MainApp.showAuthentication()
   }
 
 }

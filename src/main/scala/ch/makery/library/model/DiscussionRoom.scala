@@ -41,9 +41,9 @@ object DiscussionRoom extends Database{
       sql"""
             insert into room(roomId, timeSLot, availability) values
             ('R1', '10am - 1pm', 1);
-           |insert into room(roomId, timeSLot, availability) values
+            insert into room(roomId, timeSLot, availability) values
             ('R2', '10am - 1pm', 0);
-           |insert into room(roomId, timeSLot, availability) values
+            insert into room(roomId, timeSLot, availability) values
             ('R3', '10am - 1pm', 1);
 
        """.update().apply()

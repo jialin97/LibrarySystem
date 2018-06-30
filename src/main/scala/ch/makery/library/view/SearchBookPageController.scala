@@ -1,5 +1,6 @@
 package ch.makery.library.view
 
+import ch.makery.library.MainApp
 import ch.makery.library.MainApp.roots
 import scalafxml.core.{FXMLLoader, NoDependencyResolver}
 import javafx.{scene => jfxs}
@@ -22,6 +23,10 @@ class SearchBookPageController {
     loader1.load(resource1);
     val online = loader1.getRoot[jfxs.layout.AnchorPane]
     roots.setCenter(online)
+  }
+
+  def homePage = {
+    MainApp.showHomePage()
   }
 
 }
