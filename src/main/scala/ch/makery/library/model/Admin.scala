@@ -53,7 +53,7 @@ object Admin extends Database{
         """.execute.apply()
     }
   }
-  
+
   def initData{
       DB autoCommit { implicit session =>
         sql"insert into Admin (username, password) values('admin', 'admin')"
