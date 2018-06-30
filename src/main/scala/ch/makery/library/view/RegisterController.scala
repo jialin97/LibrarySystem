@@ -1,11 +1,13 @@
 package ch.makery.library.view
 
+import ch.makery.library.MainApp
 import ch.makery.library.MainApp.roots
 import ch.makery.library.model.{Member, User}
 import scalafx.scene.control.{Alert, PasswordField, TextField}
 import scalafxml.core.{FXMLLoader, NoDependencyResolver}
 import scalafxml.core.macros.sfxml
 import javafx.{scene => jfxs}
+import scalafx.scene.control.Alert.AlertType
 import scalafx.stage.Stage
 
 @sfxml
@@ -56,13 +58,27 @@ class RegisterController (
     if(isInputValid()){
       _member.username = usernameField.text
       _member.password = passwordField.text
-      _member.save()
 
-      val resource = getClass.getResourceAsStream("HomePage.fxml")
-      val loader = new FXMLLoader(null, NoDependencyResolver)
-      loader.load(resource)
-      val homePage = loader.getRoot[jfxs.layout.AnchorPane]
-      roots.setCenter(homePage)
+      if(_member.usernameUsed()){
+        var dialogStage : Stage  = null
+
+        val alert = new Alert(Alert.AlertType.Error){
+          initOwner(dialogStage)
+          headerText = "Invalid Username"
+          contentText = "The username that you have entered is invalid. \nPlease enter another username."
+        }.showAndWait()
+
+      }
+      else{
+        _member.save()
+
+        val alertBox = new Alert(AlertType.Information) {
+          initOwner(MainApp.stage)
+          headerText = "Registration successful!"
+        }.showAndWait()
+
+        MainApp.showHomePage()
+      }
     }
 
   }

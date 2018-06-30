@@ -2,6 +2,8 @@ package ch.makery.library.model
 
 import ch.makery.library.util.Database
 import scalafx.beans.property.StringProperty
+import scalafx.scene.control.Alert
+import scalafx.stage.Stage
 import scalikejdbc._
 
 import scala.util.Try
@@ -9,17 +11,25 @@ import scala.util.Try
 class Member (usernameS: String, passwordS: String) extends User (usernameS, passwordS){
   def this() = this(null, null)
 
-  def save() : Try[Int] = { //instance method
-    if (!(isExist())) {
-      Try(DB autoCommit { implicit session =>
+  def save(){ //instance method
+      DB autoCommit { implicit session =>
         sql"""
 					insert into Member (username, password) values
 						(${username.value}, ${password.value})
 				""".update.apply()
-      })
+      }
+  }
+
+  def usernameUsed() : Boolean =  {
+    DB readOnly { implicit session =>
+      sql"""
+				select * from Member where
+				username = ${username.value}
+			""".map(rs => rs.string("username")).single.apply() //.single returns an option (Some or None)
+    } match {
+      case Some(x) => true
+      case None => false
     }
-    else
-      throw new Exception("Username already exists") // add error dialog for existing username
 
   }
 

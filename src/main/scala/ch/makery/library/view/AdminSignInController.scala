@@ -57,7 +57,7 @@ class AdminSignInController (
 
         val alertBox = new Alert(AlertType.Information) {
           initOwner(MainApp.stage)
-          headerText = "You have successfully signed in.."
+          headerText = "You have successfully signed in."
         }.showAndWait()
 
         MainApp.showHomePage()
@@ -70,7 +70,7 @@ class AdminSignInController (
           contentText = "The username or password that you have entered is invalid!"
         }.showAndWait()
 
-        isInputValid() == false
+        isInputValid() = false
       }
 
 

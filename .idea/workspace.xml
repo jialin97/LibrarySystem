@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce9ed03b-7267-4103-b90c-382b4b934f5d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Book.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Book.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/User.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/User.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Member.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Member.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/AdminSignInController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/AdminSignInController.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/RegisterController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/RegisterController.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,11 +29,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AdminSignInController.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/AdminSignInController.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1368">
+              <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+              <folding>
+                <element signature="e#32#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SigninController.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/SigninController.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="57" column="55" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
+            <state relative-caret-position="1121">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="e#32#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterController.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/RegisterController.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
               <folding>
                 <element signature="e#32#64#0" expanded="true" />
               </folding>
@@ -41,7 +68,7 @@
       <file leaf-file-name="HomePageController.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/HomePageController.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
+            <state relative-caret-position="931">
               <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
               <folding>
                 <element signature="e#32#64#0" expanded="true" />
@@ -53,8 +80,8 @@
       <file leaf-file-name="Admin.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Admin.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="988">
-              <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+            <state relative-caret-position="57">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -62,7 +89,7 @@
       <file leaf-file-name="MainApp.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/MainApp.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="285">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="e#27#59#0" expanded="true" />
@@ -74,8 +101,11 @@
       <file leaf-file-name="Member.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Member.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-130">
-              <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
+            <state relative-caret-position="190">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+              <folding>
+                <element signature="e#33#71#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,20 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/User.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OnlineBook.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/OnlineBook.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-539">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -112,15 +133,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/util/Database.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -146,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/AuthenticationController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/AdminSignIn.fxml" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Loan.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/RegisterController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/DiscussionRoom.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/MainApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/SearchOnlineBookController.scala" />
@@ -154,14 +165,15 @@
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/SearchPhysicalBookController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/OnlineBookResultController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/PhysicalBookResultController.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/AdminSignInController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/SigninController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/HomePageController.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Member.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/util/Database.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Admin.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Book.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/User.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Member.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/RegisterController.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ch/makery/library/view/AdminSignInController.scala" />
       </list>
     </option>
   </component>
@@ -404,10 +416,10 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4981075" visible="true" weight="0.32838285" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4981075" visible="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2657078" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657078" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="10" weight="0.32838285" />
       <window_info id="Learn" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -657,13 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/RegisterController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="17" column="13" selection-start-line="17" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/DiscussionRoom.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-154">
@@ -751,36 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/AdminSignInController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="62" column="30" selection-start-line="57" selection-start-column="8" selection-end-line="62" selection-end-column="30" />
-          <folding>
-            <element signature="e#32#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/SigninController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="57" column="55" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
-          <folding>
-            <element signature="e#32#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/HomePageController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-          <folding>
-            <element signature="e#32#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/OnlineBook.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-539">
@@ -788,32 +763,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/PhysicalBook.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Member.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/derby.log">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/MainApp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#27#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/util/Database.scala">
       <provider selected="true" editor-type-id="text-editor">
@@ -822,10 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Admin.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/User.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="55" column="2" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
+        <state relative-caret-position="76">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -836,10 +787,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/User.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/PhysicalBook.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/MainApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#27#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Member.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="e#33#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/model/Admin.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/SigninController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#32#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/AdminSignInController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+          <folding>
+            <element signature="e#32#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/HomePageController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <folding>
+            <element signature="e#32#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ch/makery/library/view/RegisterController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+          <folding>
+            <element signature="e#32#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
