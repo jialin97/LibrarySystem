@@ -48,7 +48,7 @@ class AdminSignInController (
   }
 
 
-  def signIn(): Unit ={
+  def signIn(){
     if(isInputValid()){
       _admin.username = usernameField.text
       _admin.password = passwordField.text
@@ -70,7 +70,7 @@ class AdminSignInController (
           contentText = "The username or password that you have entered is invalid!"
         }.showAndWait()
 
-        isInputValid() = false
+        !isInputValid()
       }
 
 

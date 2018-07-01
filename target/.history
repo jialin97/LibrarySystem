@@ -32,3 +32,4 @@ exit
 compile
 console
 netbeans
+;reload; set _root_.org.jetbrains.sbt.StructureKeys.sbtStructureOptions in Global := "download resolveClassifiers" ;*/*:dumpStructureTo C:/Users/HP/AppData/Local/Temp/sbt-structure.xml; session clear-all

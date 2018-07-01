@@ -10,9 +10,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.library.view.PhysicalBookResultController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.library.view.PhysicalBookResultController">
    <children>
-      <Text layoutX="55.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Physical Book Search Result:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <Text layoutX="55.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Physical Book Search Result:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
          <font>
             <Font size="28.0" />
          </font>
@@ -34,15 +34,15 @@
             <Label text="Book Title:" />
             <Label text="Book ID:" GridPane.rowIndex="1" />
             <Label text="Author:" GridPane.rowIndex="2" />
-            <Label text="Year of Publishion:" GridPane.rowIndex="3" />
+            <Label text="Year of Publication:" GridPane.rowIndex="3" />
             <Label text="Location:" GridPane.rowIndex="4" />
-            <Label text="Label" GridPane.columnIndex="1" />
-            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label styleClass="text" text="Label" GridPane.columnIndex="1" />
+            <Label styleClass="text" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label styleClass="text" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="text" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label styleClass="text" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label text="Availability:" GridPane.rowIndex="5" />
-            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label styleClass="text" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
       <HBox layoutX="365.0" layoutY="344.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
@@ -51,6 +51,6 @@
             <Button mnemonicParsing="false" text="Borrow Book" />
          </children>
       </HBox>
-      <Button layoutX="40.0" layoutY="351.0" mnemonicParsing="false" onAction="#homePage" text="Home Page" />
+      <Button layoutX="26.0" layoutY="345.0" mnemonicParsing="false" onAction="#homePage" text="Home Page" />
    </children>
 </AnchorPane>

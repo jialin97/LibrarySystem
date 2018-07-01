@@ -12,9 +12,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.library.view.SigninController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.library.view.SigninController">
    <children>
-      <Text layoutX="100.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0">
+      <Text layoutX="100.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Sign In" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0">
          <font>
             <Font size="36.0" />
          </font>
@@ -31,19 +31,19 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Username" />
-                  <Label text="Password" GridPane.rowIndex="1" />
-                  <TextField fx:id="usernameField" promptText="Please enter your username" GridPane.columnIndex="1" />
-                  <PasswordField fx:id="passwordField" promptText="Please enter your password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label styleClass="text" text="Username" />
+                  <Label styleClass="text" text="Password" GridPane.rowIndex="1" />
+                  <TextField fx:id="usernameField" promptText="Please enter your username" styleClass="text" GridPane.columnIndex="1" />
+                  <PasswordField fx:id="passwordField" promptText="Please enter your password" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
             </GridPane>
          </children>
       </AnchorPane>
-      <Button layoutX="277.0" layoutY="175.0" mnemonicParsing="false" onAction="#signIn" text="Sign In" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="250.0">
+      <Button layoutX="266.0" layoutY="250.0" mnemonicParsing="false" onAction="#signIn" prefHeight="35.0" prefWidth="69.0" styleClass="text" text="Sign In" AnchorPane.leftAnchor="266.0" AnchorPane.rightAnchor="265.0" AnchorPane.topAnchor="250.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Hyperlink layoutX="441.0" layoutY="227.0" onAction="#register" text="Not a member yet? Register here" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="300.0" />
+      <Hyperlink layoutX="441.0" layoutY="227.0" onAction="#register" styleClass="a" text="Not a member yet? Register here" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="300.0" />
    </children>
 </AnchorPane>

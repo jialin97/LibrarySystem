@@ -10,11 +10,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.library.view.SearchPhysicalBookController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.library.view.SearchPhysicalBookController">
     <children>
         <AnchorPane layoutX="238.0" layoutY="120.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <Text layoutX="38.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Physical Book" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                <Text layoutX="38.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Search Physical Book" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
                     <font>
                         <Font size="36.0" />
                     </font>
@@ -30,12 +30,12 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                     <children>
-                        <Label text="Book Title" />
-                        <Label text="Author" GridPane.rowIndex="1" />
-                        <Label text="Year of Publication" GridPane.rowIndex="2" />
-                        <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
-                        <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label styleClass="text" text="Book Title" />
+                        <Label styleClass="text" text="Author" GridPane.rowIndex="1" />
+                        <Label styleClass="text" text="Year of Publication" GridPane.rowIndex="2" />
+                        <TextArea prefHeight="200.0" prefWidth="200.0" styleClass="text" GridPane.columnIndex="1" />
+                        <TextArea prefHeight="200.0" prefWidth="200.0" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextArea prefHeight="200.0" prefWidth="200.0" styleClass="text" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                     </children>
                 </GridPane>
                 <Button layoutX="448.0" layoutY="345.0" mnemonicParsing="false" onAction="#result" text="Search" />

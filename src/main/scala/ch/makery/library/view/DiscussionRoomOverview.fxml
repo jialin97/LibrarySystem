@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.library.view.DiscussionRoomController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.library.view.DiscussionRoomController">
    <children>
       <AnchorPane layoutX="184.0" layoutY="100.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -21,7 +21,7 @@
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <TableView fx:id="roomTable" layoutX="-12.0" layoutY="99.0" prefHeight="398.0" prefWidth="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <TableView fx:id="roomTable" layoutX="-12.0" layoutY="99.0" prefHeight="398.0" prefWidth="175.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <columns>
                             <TableColumn fx:id="roomIdColumn" prefWidth="71.19997864961624" text="Room ID" />
                             <TableColumn fx:id="timeSlotColumn" prefWidth="104.79998779296875" text="Time Slots" />
@@ -29,10 +29,10 @@
                         </TableView>
                      </children>
                   </AnchorPane>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="background">
                      <children>
                         <Label layoutX="30.0" layoutY="14.0" />
-                        <Text layoutX="58.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Details" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                        <Text layoutX="58.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Room Details" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
                            <font>
                               <Font size="24.0" />
                            </font>
@@ -48,17 +48,17 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Label text="Room ID: ">
+                              <Label styleClass="text" text="Room ID: ">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Label>
-                              <Label text="Time Slots:" GridPane.rowIndex="1">
+                              <Label styleClass="text" text="Time Slots:" GridPane.rowIndex="1">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Label>
-                              <Label text="Availability:" GridPane.rowIndex="2">
+                              <Label styleClass="text" text="Availability:" GridPane.rowIndex="2">
                                  <font>
                                     <Font size="14.0" />
                                  </font>

@@ -68,7 +68,7 @@ class SigninController (
           contentText = "The username or password that you have entered is invalid!"
         }.showAndWait()
 
-        isInputValid() == false
+        !isInputValid()
       }
 
 

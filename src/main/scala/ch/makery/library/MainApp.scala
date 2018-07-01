@@ -10,6 +10,7 @@ import scalafx.scene.Scene
 import scalafxml.core.{FXMLLoader, FXMLView, NoDependencyResolver}
 import javafx.{scene => jfxs}
 import scalafx.Includes._
+import scalafx.scene.image.Image
 import scalafx.stage.{Modality, Stage}
 
 
@@ -48,6 +49,7 @@ object MainApp extends JFXApp{
 
   stage = new PrimaryStage{
     title = "Library System"
+    icons += new Image("images/library.png")
     scene = new Scene(height = 600, width = 600){
       root = roots
     }

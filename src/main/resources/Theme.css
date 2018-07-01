@@ -1,0 +1,38 @@
+.background{
+    -fx-background-color: #E2EFDE;
+}
+
+.text{
+    -fx-font-family: "Georgia";
+    -fx-text-fill: #546A7B;
+}
+
+.button{
+    -fx-padding: 10px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: #AFD0BF;
+}
+
+.button:hover{
+    -fx-text-fill: #9EA3B0;
+}
+
+.button:focused{
+    -fx-border-color: white, white;
+}
+
+.a{
+    -fx-text-fill: #9EA3B0;
+}
+
+.a:hover, .a:clicked{
+    -fx-underline: false;
+    -fx-text-fill: #546A7B;
+}
+
+.menu-item:hover{
+    -fx-background-color: #E2EFDE
+}
+
+
